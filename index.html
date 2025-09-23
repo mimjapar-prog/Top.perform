@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top Perform – Athletic Training</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Perform - Athletic Training</title>
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#5A4FCF" />
+  <meta name="theme-color" content="#4A47A3">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,30 +13,66 @@
       color: #333;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
     }
-    h1 { color: #5A4FCF; }
+    header {
+      background: #4A47A3;
+      color: white;
+      padding: 20px;
+    }
+    header img {
+      height: 60px;
+    }
+    h1 {
+      margin: 15px 0 5px;
+    }
     .btn {
-      background: #5A4FCF;
+      background: #4A47A3;
       color: white;
       padding: 12px 20px;
       border-radius: 8px;
       text-decoration: none;
+      margin: 10px;
       display: inline-block;
-      margin-top: 20px;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .testimonials {
+      background: #eee;
+      padding: 40px 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
-  <h1>Top Perform</h1>
-  <h2>Athletic Training</h2>
-  <p>Your journey to better performance starts here.</p>
-  <a class="btn" href="mailto:top.perform.kw@gmail.com">Contact Me</a>
+  <header>
+    <img src="logo.png" alt="Top Perform Logo">
+    <h1>Top Perform</h1>
+    <p>Athletic Training & Sport Injury Rehabilitation</p>
+  </header>
+
+  <div class="section">
+    <h2>خدماتنا</h2>
+    <a href="#" class="btn">الباقات</a>
+    <a href="#" class="btn">الخدمات</a>
+    <a href="#" class="btn">الاستبيان</a>
+  </div>
+
+  <div class="testimonials">
+    <h2>آراء العملاء</h2>
+    <p>“Top Perform غير حياتي الرياضية 💪”</p>
+    <p>“أفضل برنامج للتأهيل بعد الإصابات 👌”</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Top Perform. All rights reserved.</p>
+    <p>تواصل معنا: <a href="mailto:top.perform.kw@gmail.com" style="color:white;">top.perform.kw@gmail.com</a></p>
+  </footer>
 
   <script>
     if ('serviceWorker' in navigator) {
