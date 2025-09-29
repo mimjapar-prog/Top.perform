@@ -1,83 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Top Perform - Athletic Training</title>
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4A47A3">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Top.perform – أفضل أداء</title>
+  <meta name="theme-color" content="#6D28D9" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #333;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-    header {
-      background: #4A47A3;
-      color: white;
-      padding: 20px;
-    }
-    header img {
-      height: 60px;
-    }
-    h1 {
-      margin: 15px 0 5px;
-    }
-    .btn {
-      background: #4A47A3;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-      margin: 10px;
-      display: inline-block;
-    }
-    .section {
-      padding: 40px 20px;
-    }
-    .testimonials {
-      background: #eee;
-      padding: 40px 20px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 15px;
-    }
+    body { font-family: "Tajawal", sans-serif; }
+    .hero-overlay { background: rgba(0,0,0,0.45); }
   </style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="Top Perform Logo">
-    <h1>Top Perform</h1>
-    <p>Athletic Training & Sport Injury Rehabilitation</p>
-  </header>
+<body class="bg-white text-gray-900">
 
-  <div class="section">
-    <h2>خدماتنا</h2>
-    <a href="#" class="btn">الباقات</a>
-    <a href="#" class="btn">الخدمات</a>
-    <a href="#" class="btn">الاستبيان</a>
-  </div>
+  <!-- HERO -->
+  <section class="relative min-h-[80vh] flex items-center justify-center text-center">
+    <img src="https://i.imgur.com/2JePn0K.jpeg" alt="Top.perform" class="absolute inset-0 w-full h-full object-cover">
+    <div class="hero-overlay absolute inset-0"></div>
+    <div class="relative z-10 text-white px-4">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">Top.perform</h1>
+      <p class="text-lg md:text-2xl">أفضل أداء يبدأ من هنا 🏃‍♂️💪</p>
+    </div>
+  </section>
 
-  <div class="testimonials">
-    <h2>آراء العملاء</h2>
-    <p>“Top Perform غير حياتي الرياضية 💪”</p>
-    <p>“أفضل برنامج للتأهيل بعد الإصابات 👌”</p>
-  </div>
+  <!-- ABOUT -->
+  <section class="max-w-3xl mx-auto py-12 px-6 text-center">
+    <h2 class="text-2xl font-bold text-purple-700 mb-4">من أنا؟</h2>
+    <p class="text-lg leading-relaxed">
+      معد بدني ومدرب جري معتمد دوليًا، حاصل على عدة شهادات في المجال الرياضي، خبرة في التدريب منذ 2019.
+      اخترت اسم <span class="font-bold">Top.perform</span> لأن رسالتي هي مساعدة الرياضيين وغير الرياضيين على تحسين الحركة، التخلص من الآلام، 
+      اختيار الأغذية المناسبة، وتقوية الأداء البدني واللياقة.
+    </p>
+  </section>
 
-  <footer>
-    <p>© 2025 Top Perform. All rights reserved.</p>
-    <p>تواصل معنا: <a href="mailto:top.perform.kw@gmail.com" style="color:white;">top.perform.kw@gmail.com</a></p>
+  <!-- PACKAGES -->
+  <section class="bg-gray-50 py-12 px-6">
+    <h2 class="text-2xl font-bold text-center text-purple-700 mb-8">الباقات</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+
+      <!-- باقات التدريب أونلاين -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-bold mb-4">التدريب أونلاين</h3>
+        <ul class="space-y-2">
+          <li>💻 استشارة فقط – 25 د.ك</li>
+          <li>💻 استشارة + جدول تدريبي – 65 د.ك</li>
+          <li>💻 جدول تدريبي فقط – 50 د.ك</li>
+        </ul>
+      </div>
+
+      <!-- التدريب الشخصي -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-bold mb-4">التدريب الشخصي</h3>
+        <ul class="space-y-2">
+          <li>🏋️ حصة تدريب – 30 د.ك</li>
+          <li>🏋️ استشارة وتقييم – 35 د.ك</li>
+          <li>🏋️ 4 حصص – 100 د.ك</li>
+          <li>🏋️ 8 حصص – 180 د.ك</li>
+          <li>🏋️ 12 حصة – 245 د.ك</li>
+        </ul>
+      </div>
+
+      <!-- مجموعة الجري -->
+      <div class="bg-white rounded-2xl shadow p-6 text-center">
+        <h3 class="text-xl font-bold mb-4">مجموعة الجري</h3>
+        <p>🏃‍♂️ 99 د.ك / 4 أسابيع</p>
+        <p class="text-sm mt-2">الأحد – الثلاثاء – الخميس<br>الساعة 5:30 صباحًا</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="py-12 px-6">
+    <h2 class="text-2xl font-bold text-center text-purple-700 mb-8">آراء العملاء</h2>
+    <div class="max-w-4xl mx-auto text-center text-gray-600">
+      <p>💬 "هنا نضع الشهادات لاحقًا مع اسم العميل"</p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="bg-purple-700 py-12 text-center text-white">
+    <h2 class="text-2xl font-bold mb-4">تواصل معي</h2>
+    <div class="space-x-4 space-x-reverse">
+      <a href="https://wa.me/96599391293" class="bg-white text-purple-700 font-bold py-2 px-4 rounded-full">واتساب</a>
+      <a href="https://instagram.com/top.perform" class="bg-white text-purple-700 font-bold py-2 px-4 rounded-full">إنستغرام</a>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-4 text-center text-sm">
+    © 2025 Top.perform – جميع الحقوق محفوظة
   </footer>
 
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/service-worker.js');
-    }
-  </script>
 </body>
 </html>
