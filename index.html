@@ -7,27 +7,27 @@
   <meta name="description" content="Top.perform — تدريب جري وإعداد بدني منذ 2019. استشارات أونلاين، برامج مخصصة، تدريب شخصي ومجموعة جري. تواصل الآن وابدأ أفضل أداء.">
   <meta name="theme-color" content="#6D28D9" />
 
-  <!-- Open Graph / Twitter -->
+  <!-- Open Graph / Twitter (تحسينات SEO للمشاركة) -->
   <meta property="og:title" content="Top.perform – أفضل أداء" />
   <meta property="og:description" content="تدريب جري وإعداد بدني — برامج أونلاين وشخصية ومجموعة جري." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.top-perform.com/" />
-  <meta property="og:image" content="hero.jpg" />
+  <meta property="og:image" content="hero.png" />
   <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- خطوط -->
+  <!-- خطوط وتحسين تحميل -->
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;800&display=swap" rel="stylesheet">
 
-  <!-- Tailwind -->
+  <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
     :root{
-      --brand:#6D28D9;
-      --brand-2:#8B5CF6;
-      --accent:#E11D48;
+      --brand:#6D28D9;      /* بنفسجي */
+      --brand-2:#8B5CF6;    /* بنفسجي فاتح */
+      --accent:#E11D48;     /* قرمزي */
     }
     html{ scroll-behavior:smooth }
     body{ font-family:"Tajawal", system-ui, -apple-system, "Segoe UI", Roboto, "Noto Naskh Arabic", sans-serif }
@@ -42,15 +42,28 @@
     .shadow-soft{ box-shadow:0 6px 18px rgba(0,0,0,.07) }
     .input{ border:1px solid #e5e7eb; border-radius:1rem; padding:.9rem 1rem }
     .input:focus{ outline:none; border-color:var(--brand); box-shadow:0 0 0 3px rgba(109,40,217,.15) }
+    /* زر واتساب عائم */
     .whatsapp-fab{ position:fixed; left:1rem; bottom:1rem; background:#22c55e; color:#fff; border-radius:999px; padding:.9rem 1rem; font-weight:700; box-shadow:0 10px 24px rgba(0,0,0,.18); z-index:50 }
   </style>
 </head>
 <body class="bg-white text-gray-900">
 
+  <!-- شريط علوي بسيط -->
+  <header class="sticky top-0 backdrop-blur bg-white/80 border-b border-gray-100 z-40">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#top" class="font-extrabold text-lg text-[var(--brand)]">Top.perform</a>
+      <div class="hidden md:flex items-center gap-4">
+        <a href="#plans" class="text-gray-700 hover:text-[var(--brand)]">الباقات</a>
+        <a href="#testimonials" class="text-gray-700 hover:text-[var(--brand)]">الآراء</a>
+        <a href="#signup" class="btn btn-primary">سجّل الآن</a>
+      </div>
+    </nav>
+  </header>
+
   <!-- HERO -->
   <main id="top">
     <section class="relative text-center min-h-[72vh] flex items-center justify-center px-4">
-      <img src="hero.jpg" alt="Top.perform Coach"
+      <img src="hero.png" alt="Top.perform Coach"
            class="absolute inset-0 w-full h-full object-cover" loading="eager" />
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="relative z-10 max-w-3xl text-white">
@@ -69,6 +82,113 @@
         </div>
       </div>
     </section>
+
+    <!-- مميزات سريعة -->
+    <section class="max-w-6xl mx-auto py-10 px-4 grid gap-4 md:grid-cols-3">
+      <div class="card p-5">
+        <h3 class="font-bold text-lg mb-1">برامج مخصصة</h3>
+        <p class="text-gray-600">خطة مبنية على مستواك وهدفك (سرعة، لياقة، وزن، سباق).</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-bold text-lg mb-1">متابعة أونلاين</h3>
+        <p class="text-gray-600">تقييم دوري وتعديل الخطة حسب تقدّمك لتفادي الإصابات.</p>
+      </div>
+      <div class="card p-5">
+        <h3 class="font-bold text-lg mb-1">نتائج قابلة للقياس</h3>
+        <p class="text-gray-600">اختبارات بسيطة لقياس التحسّن في السرعة والقوة والحركة.</p>
+      </div>
+    </section>
+
+    <!-- الباقات -->
+    <section id="plans" class="max-w-6xl mx-auto py-12 px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-center text-[var(--brand)] mb-8">الباقات الرئيسية</h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        <!-- أونلاين -->
+        <article class="card p-6">
+          <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">تدريب أونلاين</h3>
+          <p class="text-gray-600 mb-4">استشارات وجداول تدريبية مخصصة.</p>
+          <ul class="list-disc pr-5 space-y-1 mb-5 text-gray-800">
+            <li>استشارة – <b>25 د.ك</b></li>
+            <li>استشارة + جدول – <b>65 د.ك</b></li>
+            <li>جدول فقط – <b>50 د.ك</b></li>
+          </ul>
+          <a href="#signup" class="btn btn-primary block text-center">احجز استشارة</a>
+        </article>
+
+        <!-- تدريب شخصي -->
+        <article class="card p-6">
+          <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">تدريب شخصي</h3>
+          <p class="text-gray-600 mb-4">جلسات فردية وجهاً لوجه.</p>
+          <ul class="list-disc pr-5 space-y-1 mb-5 text-gray-800">
+            <li>حصة واحدة – <b>30 د.ك</b></li>
+            <li>استشارة + تقييم – <b>35 د.ك</b></li>
+            <li>4 حصص – <b>100 د.ك</b></li>
+            <li>8 حصص – <b>180 د.ك</b></li>
+            <li>12 حصة – <b>245 د.ك</b></li>
+          </ul>
+          <a href="#signup" class="btn btn-primary block text-center">احجز تدريبًا شخصيًا</a>
+        </article>
+
+        <!-- مجموعة الجري -->
+        <article class="card p-6">
+          <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">مجموعة الجري</h3>
+          <p class="text-gray-700 mb-1">اشتراك 4 أسابيع – <b>99 د.ك</b></p>
+          <p class="text-gray-600 mb-5">3 أيام/الأسبوع: الأحد، الثلاثاء، الخميس — <b>5:30 صباحًا</b></p>
+          <a href="#signup" class="btn btn-primary block text-center">سجّل مع الفريق</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- آراء العملاء (Placeholder) -->
+    <section id="testimonials" class="bg-gray-50 py-12 px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-center text-[var(--brand)] mb-8">آراء العملاء</h2>
+      <div class="max-w-4xl mx-auto grid gap-6 md:grid-cols-2">
+        <blockquote class="card p-6">
+          <p class="mb-2">“سيتم إضافة شهادة عميل حقيقية هنا لاحقًا.”</p>
+          <footer class="font-semibold">— اسم العميل</footer>
+        </blockquote>
+        <blockquote class="card p-6">
+          <p class="mb-2">“مكان مخصص لآراء العملاء وتجاربهم.”</p>
+          <footer class="font-semibold">— عميل آخر</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- نموذج التسجيل -->
+    <section id="signup" class="max-w-xl mx-auto py-12 px-4">
+      <h2 class="text-2xl md:text-3xl font-extrabold text-center text-[var(--brand)] mb-6">سجّل اهتمامك</h2>
+      <form action="https://formspree.io/f/your_form_id" method="POST" accept-charset="utf-8"
+            class="card grid gap-4 p-6">
+        <input class="input" name="name" type="text" placeholder="الاسم الكامل" required />
+        <input class="input" name="contact" type="text" placeholder="واتساب أو بريد إلكتروني" required />
+        <select class="input" name="goal">
+          <option value="">هدفك الأساسي</option>
+          <option value="fitness">تحسين اللياقة</option>
+          <option value="speed">تحسين السرعة</option>
+          <option value="weight_loss">إنقاص الوزن</option>
+          <option value="race_prep">الاستعداد لسباق</option>
+        </select>
+        <textarea class="input" name="notes" placeholder="أي معلومات مهمة: مستوى لياقتك، إصابات، توقّعاتك"></textarea>
+
+        <!-- Honeypot -->
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
+        <button class="btn btn-primary" type="submit" aria-label="إرسال النموذج">إرسال</button>
+      </form>
+      <p class="text-center text-sm text-gray-600 mt-4">
+        تواصل مباشر: <a class="underline text-green-600" href="https://wa.me/96599391293">واتساب</a> ·
+        <a class="underline text-[var(--brand)]" href="https://instagram.com/top.perform">@top.perform</a>
+      </p>
+    </section>
   </main>
+
+  <footer class="text-center py-8 text-gray-600">
+    <p>© <span id="y"></span> Top.perform — جميع الحقوق محفوظة</p>
+  </footer>
+
+  <!-- زر واتساب عائم -->
+  <a class="whatsapp-fab" href="https://wa.me/96599391293" aria-label="تواصل واتساب">واتساب</a>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear()</script>
 </body>
 </html>
