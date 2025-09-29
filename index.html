@@ -40,8 +40,6 @@
     .badge{ background:rgba(139,92,246,.15); color:var(--brand); padding:.2rem .6rem; border-radius:.6rem; font-size:.85rem }
     .card{ background:#fff; border-radius:1.2rem; box-shadow:0 8px 24px rgba(0,0,0,.08) }
     .shadow-soft{ box-shadow:0 6px 18px rgba(0,0,0,.07) }
-    .input{ border:1px solid #e5e7eb; border-radius:1rem; padding:.9rem 1rem }
-    .input:focus{ outline:none; border-color:var(--brand); box-shadow:0 0 0 3px rgba(109,40,217,.15) }
     /* زر واتساب عائم */
     .whatsapp-fab{ position:fixed; left:1rem; bottom:1rem; background:#22c55e; color:#fff; border-radius:999px; padding:.9rem 1rem; font-weight:700; box-shadow:0 10px 24px rgba(0,0,0,.18); z-index:50 }
   </style>
@@ -53,6 +51,7 @@
     <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
       <a href="#top" class="font-extrabold text-lg text-[var(--brand)]">Top.perform</a>
       <div class="hidden md:flex items-center gap-4">
+        <a href="#about" class="text-gray-700 hover:text-[var(--brand)]">من أنا</a>
         <a href="#plans" class="text-gray-700 hover:text-[var(--brand)]">الباقات</a>
         <a href="#testimonials" class="text-gray-700 hover:text-[var(--brand)]">الآراء</a>
         <a href="#signup" class="btn btn-primary">سجّل الآن</a>
@@ -63,9 +62,7 @@
   <!-- HERO -->
   <main id="top">
     <section class="relative text-center min-h-[72vh] flex items-center justify-center px-4">
-      <img src="hero.png"
-           alt="Top.perform Coach"
-           class="absolute inset-0 w-full h-full object-cover" loading="eager" />
+      <img src="hero.png" alt="Top.perform Coach" class="absolute inset-0 w-full h-full object-cover" loading="eager" />
       <div class="absolute inset-0 hero-overlay"></div>
       <div class="relative z-10 max-w-3xl text-white">
         <span class="badge inline-block mb-3">مدرب جري ومعد بدني منذ 2019</span>
@@ -80,6 +77,44 @@
         <div class="mt-6 text-sm opacity-90">
           تواصل سريع: <a class="underline" href="https://wa.me/96599391293">واتساب</a> ·
           <a class="underline" href="https://instagram.com/top.perform">@top.perform</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- من أنا -->
+    <section id="about" class="max-w-5xl mx-auto py-12 px-6">
+      <h2 class="text-3xl font-extrabold text-[var(--brand)] mb-6 text-center">من أنا</h2>
+      <p class="text-gray-700 leading-8 mb-8 text-center">
+        مدرب جري ومعد بدني بخبرة منذ عام 2019، حاصل على عدة شهادات ودورات في مجال التدريب الرياضي
+        والتغذية والأداء البدني، أعمل على تطوير الحركة، تحسين القوة واللياقة، ومساعدة الرياضيين
+        والهواة لتحقيق أهدافهم بخطط تدريبية مبنية على العلم والتجربة.
+      </p>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- الكورسات -->
+        <div>
+          <h3 class="font-bold text-xl text-[var(--brand)] mb-3">📚 الكورسات والدورات الدراسية</h3>
+          <ul class="list-disc pr-5 space-y-1 text-gray-700">
+            <li>أخصائي القوة واللياقة البدنية (Strength & Conditioning Specialist)</li>
+            <li>تغذية رياضية (Sports Nutrition)</li>
+            <li>تدريب الجري (Running Coach)</li>
+            <li>التدريب الوظيفي (Functional Training)</li>
+            <li>دبلوم اللياقة البدنية (Diploma in Fitness)</li>
+            <li>مدرب لياقة بدنية (Fitness Trainer)</li>
+            <li>HS FA Course – American Heart Association</li>
+            <li>CPR & AED Course – American Heart Association</li>
+          </ul>
+        </div>
+        <!-- جهات الاعتماد -->
+        <div>
+          <h3 class="font-bold text-xl text-[var(--brand)] mb-3">🌍 جهات الاعتماد والشهادات الدولية</h3>
+          <ul class="list-disc pr-5 space-y-1 text-gray-700">
+            <li>ASFA – American Sports & Fitness Association</li>
+            <li>AFAA – Athletics and Fitness Association of America</li>
+            <li>ISSA – International Sports Sciences Association</li>
+            <li>NASM – National Academy of Sports Medicine</li>
+            <li>NCSF – National Council on Strength & Fitness</li>
+            <li>AHA – American Heart Association</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -104,7 +139,6 @@
     <section id="plans" class="max-w-6xl mx-auto py-12 px-4">
       <h2 class="text-2xl md:text-3xl font-extrabold text-center text-[var(--brand)] mb-8">الباقات الرئيسية</h2>
       <div class="grid gap-6 md:grid-cols-3">
-        <!-- أونلاين -->
         <article class="card p-6">
           <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">تدريب أونلاين</h3>
           <p class="text-gray-600 mb-4">استشارات وجداول تدريبية مخصصة.</p>
@@ -115,8 +149,6 @@
           </ul>
           <a href="#signup" class="btn btn-primary block text-center">احجز استشارة</a>
         </article>
-
-        <!-- تدريب شخصي -->
         <article class="card p-6">
           <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">تدريب شخصي</h3>
           <p class="text-gray-600 mb-4">جلسات فردية وجهاً لوجه.</p>
@@ -129,8 +161,6 @@
           </ul>
           <a href="#signup" class="btn btn-primary block text-center">احجز تدريبًا شخصيًا</a>
         </article>
-
-        <!-- مجموعة الجري -->
         <article class="card p-6">
           <h3 class="text-xl font-bold mb-1 text-[var(--brand)]">مجموعة الجري</h3>
           <p class="text-gray-700 mb-1">اشتراك 4 أسابيع – <b>99 د.ك</b></p>
@@ -155,24 +185,17 @@
       </div>
     </section>
 
-    <!-- التسجيل (واتساب فقط مؤقتًا) -->
+    <!-- التسجيل -->
     <section id="signup" class="max-w-xl mx-auto py-12 px-4">
       <h2 class="text-2xl md:text-3xl font-extrabold text-center text-[var(--brand)] mb-6">سجّل اهتمامك</h2>
       <div class="card grid gap-4 p-6 text-center">
         <p class="text-gray-700 mb-4">
           للتسجيل أو الاستفسار السريع اضغط الزر أدناه للتواصل عبر واتساب مباشرة.
         </p>
-        <a href="https://wa.me/96599391293"
-           class="btn btn-primary text-center block"
-           target="_blank" rel="noopener">
-           تواصل عبر واتساب
+        <a href="https://wa.me/96599391293" class="btn btn-primary text-center block" target="_blank" rel="noopener">
+          تواصل عبر واتساب
         </a>
       </div>
-      <p class="text-center text-sm text-gray-600 mt-4">
-        تواصل مباشر أيضًا: 
-        <a class="underline text-green-600" href="https://wa.me/96599391293">واتساب</a> ·
-        <a class="underline text-[var(--brand)]" href="https://instagram.com/top.perform">@top.perform</a>
-      </p>
     </section>
   </main>
 
